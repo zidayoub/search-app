@@ -1,0 +1,110 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --primary: 142.1 76.2% 36.3%; /* Green primary color */
+    --primary-foreground: 0 0% 100%; /* White text on green */
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 142.1 76.2% 36.3%; /* Green ring color */
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222.2 84% 4.9%;
+    --foreground: 210 40% 98%;
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --primary: 142.1 76.2% 36.3%; /* Green primary color */
+    --primary-foreground: 0 0% 100%; /* White text on green */
+    --secondary: 217.2 32.6% 17.5%;
+    --secondary-foreground: 210 40% 98%;
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+    --ring: 142.1 76.2% 36.3%; /* Green ring color */
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+@layer components {
+  .search-container {
+    @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-50 to-teal-50;
+  }
+
+  .search-input {
+    @apply w-full max-w-md px-4 py-3 text-lg border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-green-500 focus:border-green-500 transition-all;
+  }
+
+  .search-button {
+    @apply mt-4 px-6 py-3 bg-green-600 text-white font-semibold rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all;
+  }
+}
+
+@layer pages {
+  /* Search Page (index.vue) */
+  .search-page {
+    @apply flex flex-col items-center justify-center min-h-screen bg-gradient-to-br from-green-50 to-teal-50;
+  }
+
+  .search-page-title {
+    @apply text-3xl font-bold text-gray-800 mb-6;
+  }
+
+  .search-page-card {
+    @apply w-full max-w-md bg-white p-8 rounded-lg shadow-lg;
+  }
+
+  /* Results Page (results.vue) */
+  .results-page {
+    @apply min-h-screen bg-gradient-to-br from-green-50 to-teal-50 p-8;
+  }
+
+  .results-page-container {
+    @apply max-w-4xl mx-auto bg-white p-8 rounded-lg shadow-lg;
+  }
+
+  .results-page-title {
+    @apply text-3xl font-bold text-gray-800 mb-6;
+  }
+
+  .results-page-button-container {
+    @apply mt-6 flex gap-6;
+  }
+
+  .results-page-back-button {
+    @apply px-6 py-2 bg-green-500 text-black rounded-lg border-2 border-black hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-offset-2 transition-all;
+  }
+}
