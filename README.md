@@ -1,75 +1,33 @@
-# Nuxt Minimal Starter
+# Search App
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Description
+Une application web de recherche développée avec Nuxt.js et Tailwind CSS.
 
-## Setup
+## Deliverables: Tools Used
 
-Make sure to install dependencies:
+### Frameworks et Bibliothèques
+- **Nuxt.js** : Framework basé sur Vue.js pour le développement d'applications web performantes.
+- **Tailwind CSS** : Framework CSS utilitaire pour le design rapide et réactif.
 
-```bash
-# npm
-npm install
+### Langages
+- **TypeScript** : Superset de JavaScript offrant une typage statique pour un code plus robuste.
+- **JavaScript** : Utilisé pour la logique de l'application et les interactions dynamiques.
 
-# pnpm
-pnpm install
+### Outils de Développement
+- **Visual Studio Code (VS Code)** : Éditeur de code utilisé pour écrire et organiser le code.
+- **Node.js** : Environnement d'exécution pour JavaScript côté serveur.
+- **npm** : Gestionnaire de paquets pour installer et gérer les dépendances.
+- **Git** : Système de gestion de version pour suivre les modifications du code.
 
-# yarn
-yarn install
+### Outils de Collaboration
+- **GitHub** : Plateforme pour héberger et collaborer sur le code source du projet.
+- **Git** : Pour le suivi et la gestion des versions du projet.
 
-# bun
-bun install
-```
+### Utilitaires
+- **tsconfig.json** : Fichier de configuration pour TypeScript.
+- **csvExport.ts** : Utilitaire pour exporter des données en format CSV.
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
-```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+## Installation
+1. Clonez le dépôt :
+   ```bash
+   git clone https://github.com/zidayoub/search-app.git
