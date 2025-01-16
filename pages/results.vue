@@ -1,16 +1,17 @@
 <template>
   <div class="results-page">
-    <div class="results-page-container">
-      <h1 class="results-page-title">Search Results</h1>
+    <div class="results-page-container flex flex-col space-y-2">
+      <h1 class="text-3xl p-2 text-center ">Search Results</h1>
       <DataTable :data="filteredResults" />
-      <div class="results-page-button-container"> <!-- Increased gap between buttons -->
-        <DownloadButton :data="filteredResults" />
+      <div class="results-page-button-container flex justify-between"> <!-- Increased gap between buttons -->
         <button
           @click="goToSearch"
-          class="results-page-button-container"
+          class="results-page-button-container border-purple-950 border  p-2 rounded-md text-purple-950 font-bold"
         >
           Back to Search
         </button>
+        <DownloadButton :data="filteredResults" />
+
       </div>
     </div>
   </div>
